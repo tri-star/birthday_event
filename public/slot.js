@@ -1,8 +1,5 @@
 
 
-function rouletteStart() {
-};
-
 
 RouletteDigit = function(elementName, number) {
     this.init(elementName, number);
