@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" >
-    <title>誕生日特別企画！</title>
+    <title>HIRO6 - 誕生日特別企画！</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
@@ -16,13 +16,17 @@ var digit1 = new RouletteDigit('digit-1');
 var digit2 = new RouletteDigit('digit-2');
 var digit3 = new RouletteDigit('digit-3');
 var digit4 = new RouletteDigit('digit-4');
+var digit5 = new RouletteDigit('digit-5');
+var digit6 = new RouletteDigit('digit-6');
 
 $(document).ready(function(){
     $("#start-button").click(function() {
-        digit1.start(1);
-        digit2.start(2);
-        digit3.start(3);
-        digit4.start(4);
+        digit1.start(9);
+        digit2.start(9);
+        digit3.start(0);
+        digit4.start(0);
+        digit5.start(3);
+        digit6.start(7);
     });
 });
     </script>
@@ -33,53 +37,36 @@ $(document).ready(function(){
 
 <div class="container">
       <div class="header">
-        <h3 class="text-muted">誕生日特別企画！</h3>
+        <h2><font color="#0000bb">HIRO</font> <font color="#dd0000">6</font> - 特別企画！</h3>
       </div>
 
       <div class="jumbotron">
-        <h1>必ずもらえる！<br />コインロッカーくじ</h1>
-        <p class="lead">画面に表示された番号を使ってコインロッカーを開けるだけで、豪華プレゼントが必ずもらえちゃいます！</p>
+        <h1>さらにプレゼント！？<br />コインロッカーくじ</h1>
+        <p class="lead">画面に表示された番号を使ってコインロッカーを開けるだけで、豪華プレゼントがもらえちゃうかも！？</p>
         <p><a id="start-button" class="btn btn-lg btn-success" href="#">抽選開始！</a></p>
       </div>
 
-<div class="row number-table">
-    <div class="col-xs-3"><span id="digit-1" class="digit">0</span></div>
-    <div class="col-xs-3"><span id="digit-2" class="digit">0</span></div>
-    <div class="col-xs-3"><span id="digit-3" class="digit">0</span></div>
-    <div class="col-xs-3"><span id="digit-4" class="digit">0</span></div>
+<!--
+<div class="alert alert-success topic-header"><strong>鍵番号</strong></div>
+-->
+<div class="row">
+    <div class="col-xs-2"><span id="digit-1" class="digit">0</span></div>
+    <div class="col-xs-2"><span id="digit-2" class="digit">0</span></div>
+    <div class="col-xs-2"><span id="digit-3" class="digit">0</span></div>
+    <div class="col-xs-2"><span id="digit-4" class="digit">0</span></div>
+    <div class="col-xs-2"><span id="digit-5" class="digit">0</span></div>
+    <div class="col-xs-2"><span id="digit-6" class="digit">0</span></div>
 </div>
 
-<!--
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
-
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
--->
+<div class="row mini-note">
+  <div class="col-xs-12"><small>※ロッカーの場所等については担当者にお問い合わせください。</small></div>
+</div>
 
       <div class="footer">
         <p>&copy; WORLD 2013</p>
       </div>
 
-    </div> <!-- /container -->
+</div>
 
 </body>
 

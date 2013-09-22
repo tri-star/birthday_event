@@ -1,6 +1,6 @@
 
-.number-table {
-    margin: 50px 0px;
+.topic-header {
+    margin-top: 50px;
 }
 .image-area {
     margin-top: 30px;
@@ -12,5 +12,10 @@
     font-size: 6.0em;
     text-align: center;
     font-family: 'Stalinist One', cursive;
+}
+
+.mini-note {
+    margin-top: 15px;
+    margin-bottom: 30px;
 }
 
