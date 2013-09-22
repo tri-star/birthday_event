@@ -10,6 +10,23 @@
     <link href='http://fonts.googleapis.com/css?family=Plaster|Stalinist+One' rel='stylesheet' type='text/css'>
     <script src="//codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="./slot.js"></script>
+
+    <script>
+var digit1 = new RouletteDigit('digit-1');
+var digit2 = new RouletteDigit('digit-2');
+var digit3 = new RouletteDigit('digit-3');
+var digit4 = new RouletteDigit('digit-4');
+
+$(document).ready(function(){
+    $("#start-button").click(function() {
+        digit1.start(1);
+        digit2.start(2);
+        digit3.start(3);
+        digit4.start(4);
+    });
+});
+    </script>
+
 </head>
 
 <body>
